@@ -1,0 +1,22 @@
+{
+  "name": "streams-in-nodejs",
+  "version": "1.0.0",
+  "description": "all about streams in Node Js, buffers in Node Js creating stram for better performance",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshayrakhunde01/streams-in-nodejs.git"
+  },
+  "keywords": [],
+  "author": "Akshay Rakhunde",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/akshayrakhunde01/streams-in-nodejs/issues"
+  },
+  "homepage": "https://github.com/akshayrakhunde01/streams-in-nodejs#readme"
+}
