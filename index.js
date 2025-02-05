@@ -1,5 +1,6 @@
 import http from 'http';
 import fs from 'fs'
+import { error } from 'console';
 const PORT =4000;
 
 const server = http.createServer((req,res)=>{
@@ -9,7 +10,12 @@ const server = http.createServer((req,res)=>{
         return;
     }else{
         const readFile = fs.createReadStream('100mb-examplefile-com.txt')
-        readFile.pipe(res)
+        readFile.on('error',(error)=>{
+            res.end(`errrrr ${error.message}`)
+        })
+      
+            readFile.pipe(res)
+
     }
 })
 
