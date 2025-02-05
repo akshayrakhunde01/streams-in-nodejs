@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const PORT = 4000;
-const VIDEO_PATH = path.join('200MB_1080P_THETESTDATA.COM_mp4_new.mp4'); // Make sure to provide the correct path
+const VIDEO_PATH = path.join('200MB_1080P_THETESTDATA.COM_mp4_new.mp4'); 
 
 const server = http.createServer((req, res) => {
     if (req.url !== '/') {
